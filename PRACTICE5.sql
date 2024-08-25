@@ -39,8 +39,7 @@ ON E1.Employee_id= E2.reports_to
 GROUP BY E1.EMPLOYEE_ID
 ORDER BY E1.EMPLOYEE_ID
 -- BÀI 6
-SELECT
-    P.product_name,
+SELECT P.product_name,
     SUM(O.unit) AS unit
 FROM Orders AS O
 LEFT JOIN Products AS P
